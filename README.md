@@ -42,7 +42,7 @@ cd k8s-vagrant
 ./runme.sh
 ```
 
-## Check that cluser works
+## Check that the cluster works
 
 ```shell
 vagrant ssh master
