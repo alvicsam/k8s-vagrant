@@ -37,7 +37,7 @@ spec:
 To provision the cluster, execute the following commands.
 
 ```shell
-git clone 
+git clone https://github.com/alvicsam/k8s-vagrant
 cd k8s-vagrant
 ./runme.sh
 ```
@@ -46,7 +46,12 @@ cd k8s-vagrant
 
 ```shell
 vagrant ssh master
-k get nodes
+vagrant@master-node:~$ k get nodes
+
+NAME            STATUS   ROLES                  AGE   VERSION
+master-node     Ready    control-plane,master   14m   v1.20.6
+worker-node01   Ready    worker                 12m   v1.20.6
+worker-node02   Ready    worker                 10m   v1.20.6
 ```
 
 ## Destroy the cluster
